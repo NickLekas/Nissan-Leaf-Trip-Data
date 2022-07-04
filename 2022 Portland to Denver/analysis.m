@@ -27,7 +27,6 @@ d1_soh = d1(2:size(d1), SOH)                      % SOH in percent
 % data processing
 d1_Ta = (d1_Ta - 32) * (5/9)                      % Convert ambient from F to C
 d1_dist = d1_odo(size(d1_odo)) - d1_odo(1)        % Calculate miles driven
-d1_delta_soh = d1_soh(size(d1_odo)) - d1_soh(1)   % Calculate delta SOH
 
 min_qc = min(d1_qc)                               % Get the lowest total QC
 d1_qc = d1_qc - min_qc                            % Subtract the lowest total QC from total QC's to get number of QC's done in the day
@@ -46,7 +45,6 @@ d2_soh = d2(2:size(d2), SOH)                      % SOH in percent
 % data processing
 d2_Ta = (d2_Ta - 32) * (5/9)                      % Convert ambient from F to C
 d2_dist = d2_odo(size(d2_odo)) - d2_odo(1)        % Calculate miles driven
-d2_delta_soh = d2_soh(size(d2_odo)) - d2_soh(1)   % Calculate delta SOH
 
 min_qc = min(d2_qc)                               % Get the lowest total QC
 d2_qc = d2_qc - min_qc                            % Subtract the lowest total QC from total QC's to get number of QC's done in the day
@@ -65,7 +63,6 @@ d3_soh = d3(2:size(d3), SOH)                      % SOH in percent
 % data processing
 d3_Ta = (d3_Ta - 32) * (5/9)                      % Convert ambient from F to C
 d3_dist = d3_odo(size(d3_odo)) - d3_odo(1)        % Calculate miles driven
-d3_delta_soh = d3_soh(size(d3_odo)) - d3_soh(1)   % Calculate delta SOH
 
 min_qc = min(d3_qc)                               % Get the lowest total QC
 d3_qc = d3_qc - min_qc                            % Subtract the lowest total QC from total QC's to get number of QC's done in the day
