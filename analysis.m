@@ -1,9 +1,9 @@
 close all
 
 % Read in data
-d1 = dlmread("data/day1_clean.csv", ",")
-d2 = dlmread("data/day2_clean.csv", ",")
-d3 = dlmread("data/day3_clean.csv", ",")
+d1 = dlmread("2022 Denver to Portland/data/day1_clean.csv", ",")
+d2 = dlmread("2022 Denver to Portland/data/day2_clean.csv", ",")
+d3 = dlmread("2022 Denver to Portland/data/day3_clean.csv", ",")
 
 % Column look up
 T1 = 15
@@ -88,7 +88,7 @@ title("Day 1")
 ylabel(ax(1), 'Temperature (^{\deg}C)')
 ylabel(ax(2), '# of quick charges')
 legend("T1", "T2", "T4", "Outside", 'location', 'southeastoutside')
-set(ax, "fontsize", 24)
+#set(ax, "fontsize", 24)
 
 
 % Plotting day 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,7 +110,7 @@ title("Day 2")
 ylabel(ax(1), 'Temperature (^{\deg}C)')
 ylabel(ax(2), '# of quick charges')
 legend("T1", "T2", "T4", "Outside", 'location', 'southeastoutside')
-set(ax, "fontsize", 24)
+#set(ax, "fontsize", 24)
 
 
 % Plotting day 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,4 +132,4 @@ title("Day 3")
 ylabel(ax(1), 'Temperature (^{\deg}C)')
 ylabel(ax(2), '# of quick charges')
 legend("T1", "T2", "T4", "Outside", 'location', 'southeastoutside')
-set(ax, "fontsize", 24)
+#set(ax, "fontsize", 24)
